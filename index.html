@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>India in a Box — Style is for Everyone</title>
+  <meta name="description" content="India's first certified fashion & lifestyle subscription box. Curated kits delivered monthly with a Style Guide. Starting ₹499/month."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="main-nav">
+  <a href="#" class="logo">📦 India <span>in a Box</span></a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#subscription">Plans</a></li>
+    <li><a href="#themes">Box Themes</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="cart-btn" onclick="openCart()">🛒 Cart <span class="cart-count">0</span></button>
+    <a href="#subscription" class="btn-nav">Subscribe Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="particles" id="particles"></div>
+  <div class="badge"><span class="dot"></span>🇮🇳 Launching Across India · 2026</div>
+  <h1 class="hero-title">Every Indian Deserves<br/>to <span class="grad">Look & Feel Great.</span></h1>
+  <p class="hero-sub-title">India's first certified fashion & lifestyle subscription box — with a Style Guide that teaches you <em>why</em> each product works and <em>how</em> to use it. More than shopping. It's style education.</p>
+  <div class="hero-ctas">
+    <a href="#subscription" class="btn-primary">📦 Start My Style Journey</a>
+    <a href="#products" class="btn-outline">Browse Products</a>
+  </div>
+  <div class="hero-img-wrap">
+    <div class="hero-img-placeholder">🎁</div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-n">₹499</span><span class="stat-l">Starting /month</span></div>
+    <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Certified Products</span></div>
+    <div class="stat"><span class="stat-n">22+</span><span class="stat-l">Curated Products</span></div>
+    <div class="stat"><span class="stat-n">4</span><span class="stat-l">Categories</span></div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="strip">
+  <div class="strip-item">✅ BIS / FSSAI Certified</div>
+  <div class="strip-item">🚚 Free Delivery Pan-India</div>
+  <div class="strip-item">↩️ 7-Day Return Policy</div>
+  <div class="strip-item">🔒 Secure Razorpay Payment</div>
+  <div class="strip-item">💬 WhatsApp Support</div>
+</div>
+
+<!-- THE PROBLEM -->
+<section id="problem">
+  <div class="reveal">
+    <div class="sec-label">The Problem</div>
+    <h2 class="sec-title">600 Million Indians Spend — Without Any Guidance.</h2>
+    <p class="sec-desc">Most Indians — especially outside metros — want to look great. But they face uncertified products, zero curation, and no fashion education to guide them.</p>
+  </div>
+  <div class="prob-grid reveal">
+    <div class="prob-card">
+      <span class="prob-icon">❌</span>
+      <h3>Uncertified Products Everywhere</h3>
+      <p>Local markets are full of fake, unsafe fashion and skincare. Indians spend money trusting products with zero quality guarantee.</p>
+    </div>
+    <div class="prob-card">
+      <span class="prob-icon">🤷</span>
+      <h3>Zero Fashion Guidance</h3>
+      <p>Nobody teaches aesthetic sense in India. People buy randomly — not knowing what works together, or why a look works at all.</p>
+    </div>
+    <div class="prob-card">
+      <span class="prob-icon">🏙️</span>
+      <h3>Tier 2/3 Access Gap</h3>
+      <p>Premium certified products and stylists only exist in metros. 60 crore+ people in Surat, Nagpur, Indore — left with nothing better.</p>
+    </div>
+    <div class="prob-card">
+      <span class="prob-icon">😵</span>
+      <h3>Overwhelmed by Options</h3>
+      <p>Myntra shows 5 lakh products with zero expertise. Most people buy anything, regret it, and waste ₹500–₹1,000 every single month.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="reveal">
+    <div class="sec-label">Our Products</div>
+    <h2 class="sec-title">Certified. Curated. <span style="color:var(--saffron)">Delivered.</span></h2>
+    <p class="sec-desc">Every product is quality-verified before it enters any box. Browse our full catalogue and add to cart — or let us curate the perfect box for you.</p>
+  </div>
+  <div class="cat-tabs reveal">
+    <button class="cat-tab active" data-cat="all">🌟 All Products</button>
+    <button class="cat-tab" data-cat="fashion">👗 Fashion</button>
+    <button class="cat-tab" data-cat="skincare">✨ Skincare</button>
+    <button class="cat-tab" data-cat="home">🏡 Home Aesthetics</button>
+    <button class="cat-tab" data-cat="wellness">🌿 Wellness</button>
+  </div>
+  <div class="products-grid" id="products-grid"></div>
+</section>
+
+<!-- SUBSCRIPTION PLANS -->
+<section id="subscription">
+  <div class="reveal text-center">
+    <div class="sec-label">Subscription Plans</div>
+    <h2 class="sec-title">Choose Your <span style="color:var(--saffron)">Style Journey.</span></h2>
+    <p class="sec-desc mx-auto">All plans include certified products + a Style Guide. Cancel anytime. Includes 18% GST. Free pan-India delivery.</p>
+  </div>
+  <div class="plans-grid">
+    <div class="plan-card reveal">
+      <div class="plan-tier">🟠 Starter Kit</div>
+      <div class="plan-price">₹499<span>/mo</span></div>
+      <div class="plan-usd">≈ $6 USD · GST Included</div>
+      <div class="plan-tagline">Perfect for beginners. Test-drive India in a Box.</div>
+      <ul class="plan-items">
+        <li><span class="chk">✓</span> 4–5 certified curated items</li>
+        <li><span class="chk">✓</span> Basic Style Guide card</li>
+        <li><span class="chk">✓</span> Category-based curation</li>
+        <li><span class="chk">✓</span> WhatsApp bot support</li>
+        <li><span class="chk">✓</span> Free pan-India delivery</li>
+        <li><span class="chk">✓</span> 7-day return policy</li>
+      </ul>
+      <button class="plan-btn plan-btn-border" onclick="subscribePlan('Starter Kit ₹499/month')">Get Starter Kit</button>
+    </div>
+    <div class="plan-card featured reveal">
+      <div class="plan-popular">⭐ Most Popular</div>
+      <div class="plan-tier">🌟 Style Kit</div>
+      <div class="plan-price">₹999<span>/mo</span></div>
+      <div class="plan-usd">≈ $12 USD · GST Included</div>
+      <div class="plan-tagline">For people serious about developing real fashion sense.</div>
+      <ul class="plan-items">
+        <li><span class="chk">✓</span> 7–8 fully certified items</li>
+        <li><span class="chk">✓</span> Full Style Guide booklet</li>
+        <li><span class="chk">✓</span> Quiz-based personalisation</li>
+        <li><span class="chk">✓</span> Weekly email style tips</li>
+        <li><span class="chk">✓</span> WhatsApp + Email support</li>
+        <li><span class="chk">✓</span> Early box theme previews</li>
+      </ul>
+      <button class="plan-btn plan-btn-fill" onclick="subscribePlan('Style Kit ₹999/month')">Get Style Kit</button>
+    </div>
+    <div class="plan-card reveal">
+      <div class="plan-tier">🟣 Premium Box</div>
+      <div class="plan-price">₹1,999<span>/mo</span></div>
+      <div class="plan-usd">≈ $24 USD · GST Included</div>
+      <div class="plan-tagline">The ultimate experience — fully personalised + gifting-ready.</div>
+      <ul class="plan-items">
+        <li><span class="chk">✓</span> 10–12 premium certified items</li>
+        <li><span class="chk">✓</span> Personalised styling card</li>
+        <li><span class="chk">✓</span> Full quiz personalisation</li>
+        <li><span class="chk">✓</span> Video stylist consultation</li>
+        <li><span class="chk">✓</span> Dedicated style advisor</li>
+        <li><span class="chk">✓</span> Premium gift packaging option</li>
+      </ul>
+      <button class="plan-btn plan-btn-border" onclick="subscribePlan('Premium Box ₹1,999/month')">Get Premium Box</button>
+    </div>
+  </div>
+  <p class="reveal" style="text-align:center;margin-top:1.5rem;color:var(--muted);font-size:.84rem">🎁 Also available as one-time Gift Boxes — ₹699 to ₹2,499. Perfect for Diwali, Rakhi, Birthdays & Anniversaries.</p>
+</section>
+
+<!-- BOX THEMES -->
+<section id="themes">
+  <div class="reveal text-center">
+    <div class="sec-label">Monthly Themes</div>
+    <h2 class="sec-title">Every Month — A <span style="color:var(--gold)">New Story.</span></h2>
+    <p class="sec-desc mx-auto">Our expert curators design a new theme every month. Your box always matches what's relevant, beautiful, and culturally resonant.</p>
+  </div>
+  <div class="themes-grid">
+    <div class="theme-card reveal"><div class="theme-emoji" style="background:linear-gradient(135deg,rgba(255,107,53,.15),rgba(255,179,0,.12))">🪔</div><div class="theme-info"><div class="theme-name">Festive Glow</div><div class="theme-desc">Ethnic accessories + premium skincare for the festive season. Diwali-ready in one box.</div><span class="theme-tag">October</span></div></div>
+    <div class="theme-card reveal"><div class="theme-emoji" style="background:linear-gradient(135deg,rgba(26,35,126,.2),rgba(0,150,136,.12))">💼</div><div class="theme-info"><div class="theme-name">Office Chic</div><div class="theme-desc">Professional wardrobe essentials and grooming kits to make every work day count.</div><span class="theme-tag">January</span></div></div>
+    <div class="theme-card reveal"><div class="theme-emoji" style="background:linear-gradient(135deg,rgba(0,150,136,.15),rgba(26,35,126,.15))">☔</div><div class="theme-info"><div class="theme-name">Monsoon Must-Haves</div><div class="theme-desc">Rainy season fashion picks + skin protection. Look great even in the rain.</div><span class="theme-tag">July</span></div></div>
+    <div class="theme-card reveal"><div class="theme-emoji" style="background:linear-gradient(135deg,rgba(255,179,0,.15),rgba(255,107,53,.12))">🌸</div><div class="theme-info"><div class="theme-name">Boho Indian Summer</div><div class="theme-desc">Casual Indian-aesthetic fashion for summer. Breezy and effortlessly stylish.</div><span class="theme-tag">April</span></div></div>
+    <div class="theme-card reveal"><div class="theme-emoji" style="background:linear-gradient(135deg,rgba(233,30,99,.12),rgba(255,107,53,.12))">🎨</div><div class="theme-info"><div class="theme-name">Colour Your Style</div><div class="theme-desc">Bold Holi-special aesthetic items + skin-safe products. Celebrate in full style.</div><span class="theme-tag">March</span></div></div>
+    <div class="theme-card reveal"><div class="theme-emoji" style="background:linear-gradient(135deg,rgba(33,150,243,.12),rgba(26,35,126,.15))">❄️</div><div class="theme-info"><div class="theme-name">Winter Warmth</div><div class="theme-desc">Cosy winter fashion + skin hydration must-haves for the cold months ahead.</div><span class="theme-tag">December</span></div></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="reveal text-center">
+    <div class="sec-label">How It Works</div>
+    <h2 class="sec-title">Start Looking Amazing<br/><span style="color:var(--teal)">in 4 Simple Steps.</span></h2>
+  </div>
+  <div class="steps-grid reveal">
+    <div class="step"><div class="step-num">1</div><span class="step-ico">📝</span><h3>Take the Style Quiz</h3><p>5 quick questions about your style, preferences and lifestyle. We match you with the perfect box tier.</p></div>
+    <div class="step"><div class="step-num">2</div><span class="step-ico">💳</span><h3>Subscribe Instantly</h3><p>Pay with UPI, Net Banking, Card, or EMI via Razorpay. Secure, seamless, Indian-first checkout.</p></div>
+    <div class="step"><div class="step-num">3</div><span class="step-ico">✅</span><h3>We Curate &amp; Certify</h3><p>Experts hand-pick and QC-verify every product. 5-step quality check before it enters your box. No exceptions.</p></div>
+    <div class="step"><div class="step-num">4</div><span class="step-ico">📦</span><h3>Unbox &amp; Style Up</h3><p>Your branded box arrives by the 5th of each month. Open it, read the Style Guide, and look amazing.</p></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="reveal">
+    <div class="sec-label">Customer Reviews</div>
+    <h2 class="sec-title">Real Indians. <span style="color:var(--saffron)">Real Results.</span></h2>
+    <p class="sec-desc">Tens of customers have already transformed their style journey. Here's what they say.</p>
+  </div>
+  <div class="reviews-grid" id="reviews-grid"></div>
+</section>
+
+<!-- MARKET DATA -->
+<section id="market">
+  <div class="reveal text-center">
+    <div class="sec-label">Why India in a Box · Why Now</div>
+    <h2 class="sec-title">The Market is Massive.<br/><span style="color:var(--gold)">The Gap is Ours.</span></h2>
+    <p class="sec-desc mx-auto">India's fashion, wellness, and lifestyle markets are exploding — and nobody is curating certified, guided kits for the everyday Indian.</p>
+  </div>
+  <div class="mstats-grid">
+    <div class="mstat reveal"><span class="mstat-n">₹1.5L Cr</span><p>India's fashion e-commerce market in 2026, growing at 18% CAGR</p></div>
+    <div class="mstat reveal"><span class="mstat-n">60%+</span><p>Online fashion orders now come from Tier 2 & Tier 3 cities</p></div>
+    <div class="mstat reveal"><span class="mstat-n">₹700 Cr</span><p>India's subscription box market — expected to grow 5× by 2028</p></div>
+    <div class="mstat reveal"><span class="mstat-n">600M</span><p>Indians spending ₹500–₹1,000/month on unguided, low-quality buys</p></div>
+    <div class="mstat reveal"><span class="mstat-n">0</span><p>Competitors combining certified products + lifestyle + style education</p></div>
+    <div class="mstat reveal"><span class="mstat-n">500M+</span><p>Smartphone users in India — aspiration is rising, guidance is missing</p></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="reveal text-center">
+    <div class="sec-label">Frequently Asked Questions</div>
+    <h2 class="sec-title">Got Questions? <span style="color:var(--saffron)">We've Got Answers.</span></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q">How is this different from just buying on Myntra or Nykaa? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Myntra gives you 5 lakh options with zero guidance. We give you 5–12 certified, expert-picked products that work together — AND we explain exactly why with a printed Style Guide. It's education + curation, not just a catalogue.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">How do you certify the products? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>All products go through a 5-step QC check. Fashion/textiles must have BIS or OEKO-TEX certification. Skincare must be CDSCO approved and dermatologist-tested. Food/wellness items must be FSSAI licensed. No exceptions.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">When does my box arrive each month? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Boxes ship on the 1st of every month and typically arrive within 2–7 business days depending on your city. Metro cities get delivery in 2–3 days; Tier 2/3 cities in 3–7 days. You'll get a WhatsApp tracking notification.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">Can I cancel my subscription anytime? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Yes, absolutely. Cancel anytime from your account dashboard with zero penalties. If you cancel before the 25th of the month, you won't be charged for the next month's box.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">Do you deliver to Tier 2 and Tier 3 cities? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Yes! We deliver across India via Delhivery and DTDC, covering 19,000+ pin codes including Tier 2 and Tier 3 cities. Delivery is FREE for all plans. We also offer COD for ₹30 extra.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">What is the Style Guide and how does it help me? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>The Style Guide is a printed booklet or card inside every box. It explains WHY each product was chosen for the monthly theme, HOW to wear or use it, and what complete "looks" you can create with the items. After 3 months, customers genuinely develop fashion sense — not just a bigger wardrobe.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q">Can I buy individual products without subscribing? <span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Yes! Browse our full product catalogue above and add items to cart. Individual orders are fulfilled within 3–5 business days. Free delivery on orders above ₹499.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="reveal" style="position:relative;z-index:1">
+    <div class="sec-label text-center" style="justify-content:center">Join Our Community</div>
+    <h2 class="sec-title text-center" style="font-size:clamp(1.8rem,4vw,2.8rem)">Get 30% Off Your First Box! 🎉</h2>
+    <p style="color:var(--muted);font-size:1rem;max-width:500px;margin:0 auto .5rem;line-height:1.7;text-align:center">Subscribe for weekly style tips, exclusive box previews, and member-only offers. First 100 subscribers get 30% off.</p>
+    <form class="nl-form" onsubmit="handleNewsletter(event)">
+      <input id="nl-email" class="nl-input" type="email" placeholder="your@email.com" required/>
+      <button type="submit" class="btn-primary btn-sm">Get 30% Off →</button>
+    </form>
+    <p style="margin-top:.8rem;font-size:.74rem;color:rgba(255,255,255,.25);text-align:center">No spam, ever. Unsubscribe any time.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo">📦 India <span>in a Box</span></a>
+      <p>India's first certified fashion & lifestyle subscription box. Style is for everyone. Every Indian deserves to look and feel great.</p>
+      <div class="social-links">
+        <a href="#" class="social-link">📸</a>
+        <a href="#" class="social-link">▶️</a>
+        <a href="#" class="social-link">💬</a>
+        <a href="#" class="social-link">🐦</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#products">All Products</a></li>
+        <li><a href="#products">Fashion</a></li>
+        <li><a href="#products">Skincare</a></li>
+        <li><a href="#products">Home Aesthetics</a></li>
+        <li><a href="#products">Wellness</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Plans</h4>
+      <ul>
+        <li><a href="#subscription">Starter Kit — ₹499</a></li>
+        <li><a href="#subscription">Style Kit — ₹999</a></li>
+        <li><a href="#subscription">Premium Box — ₹1,999</a></li>
+        <li><a href="#subscription">Gift Boxes</a></li>
+        <li><a href="#themes">Box Themes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="mailto:hello@indiainabox.in">Contact Us</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 India in a Box · Made with ❤️ in India — for India. · Sharp Tank ADIT · Prathit Dave</p>
+    <div class="footer-badges">
+      <span class="badge-pill">BIS Certified</span>
+      <span class="badge-pill">FSSAI Approved</span>
+      <span class="badge-pill">Razorpay Secured</span>
+      <span class="badge-pill">Free Delivery</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<div class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+    <h3>🛒 Your Cart</h3>
+    <button class="cart-close" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <div class="cart-empty"><span class="big-emoji">🛒</span><p>Your cart is empty.<br/>Add some amazing products!</p></div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Total</span><span id="cart-total-val">₹0</span></div>
+    <button class="btn-primary" style="width:100%;justify-content:center" onclick="showToast('🎉 Proceeding to checkout via Razorpay...')">Checkout via Razorpay →</button>
+    <p style="text-align:center;margin-top:.7rem;font-size:.74rem;color:var(--muted)">UPI · Cards · Net Banking · EMI · COD</p>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon">✅</span>
+  <span class="toast-msg"></span>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
